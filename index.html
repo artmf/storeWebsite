@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>WEB222 Store</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lobster"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Playfair+Display"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div>
+            <img
+                src="images/nicole-mason-19738-unsplash.jpg"
+                alt="Error"
+                class="top-img"
+            />
+        </div>
+
+        <form class="search">
+            <input id="srch" type="search" title="Search" />
+            <input type="submit" value="Search" class="submit-btn" />
+        </form>
+
+        <nav class="nav sticky-top">
+            <a id="home" class="nav-title" href="">ShoeNatic</a>
+            <a class="nav-option" href="contact.html">Contact Us</a>
+            <a class="nav-login" href="#">
+                <i class="fas fa-user"></i>
+            </a>
+            <a id="cart" class="nav-cart" href="#">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </nav>
+
+        <!--Shopping cart hover div
+            <div id="cartList">
+            <ul id="cartUl" class="hidden cart-style">
+                <li>Test 1</li>
+                <li>Test 2</li>
+                <li>Test 3</li>
+            </ul>
+        </div>-->
+
+        <header>
+            <h1 class="title">ShoeNatic</h1>
+            <p>
+                Welcome to ShoeNatic! Here you can find a variety of Women and
+                Men shoes. We started with a small group of staff but we are
+                increasing our team faster than expected. We are based in
+                Toronto, ON. In the current moment, we only have this online
+                shop. However, we pretend to open our first store in the first
+                half of 2020. We are always up to suggestions, so please contact
+                us. Customers are our first priority.
+            </p>
+        </header>
+
+        <div class="wrapper">
+            <div id="sideNav" class="side-nav">
+                <h6 class="select-type">Select by Type</h6>
+                <a id="all" class="choice" href="#">All</a>
+                <a id="woman" class="choice" href="#">Women</a>
+                <a id="men" class="choice" href="#">Men</a>
+            </div>
+
+            <div id="cardsDiv" class="main"></div>
+        </div>
+
+        <footer class="footer">
+            <form
+                action="https://formspree.io/arturmonfelix@gmail.com"
+                method="POST"
+            >
+                <h4>SIGN UP!</h4>
+                <input type="email" name="email" placeholder="Email address" />
+                <input class="submit-btn" type="submit" value="Join Now" />
+            </form>
+            <div id="footer1" class="footer-inner-div">
+                <h5>ABOUT</h5>
+                <a href="contact.html" class="list">Contact Us</a>
+                <a href="#" class="list">About Us</a>
+            </div>
+            <div id="footer2" class="footer-inner-div">
+                <h5>SHIPPING</h5>
+                <a href="#" class="list">Shipping</a>
+                <a href="#" class="list">FAQ</a>
+            </div>
+            <div id="footer3" class="footer-inner-div">
+                <a href="#" class="fab fa-facebook social-media"></a>
+                <a href="#" class="fab fa-instagram social-media"></a>
+                <a href="#" class="fab fa-twitter-square social-media"></a>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <!--
+      Part 1: Main Store Page
+
+      Requirements:
+
+      1. Navbar or Title bar across the top must include your store's name, logo,
+      and use a darker background colour, different font, etc.  You must also include
+      a link to your contact.html page.
+
+      2. Header below the navbar with store Title in appropriate font, as well
+      as info about what the store is, what it sells, etc.  Use some images to
+      try and draw the user in.  NOTE: place all your site's images in the
+      src/images/ directory.
+
+      3. Below the header, a multi-column layout of items you can purchase in the
+      store.  You must have at least 10 items in your store, and at least 2
+      categories of items. Each item should include: picture, title, description,
+      category, and price. Each item should be its own "card" (i.e., some kind of
+      box around each item separating one from the next, with suitable
+      whitespace between).
+
+      4. A sidebar on the left or right of the item layout section, showing the
+      different categories of items in your store.  If a user clicks on one of the
+      categories, use CSS and JavaScript to hide all other items in the store.
+      Make sure you include a way to once again see all categories, and make it
+      obvious to the user they they are only seeing a partial list of items when you
+      filter by category (i.e., use CSS and HTML to change things somehow).
+
+      5. Below the items, a footer with the name of the store, any relevant links you
+      need to give users, as well as a small HTML form for entering an Email
+      address and clicking Subscribe to subscribe to the store's newsletter. Use
+      https://formspree.io/ to automatically submit the form to your email address
+      (i.e., when a user fills out their email address and clicks submit, *you*
+      should get that information sent to your email address via formspree.io).
+
+      6. Use two different Web Fonts for your store.  The titles should be different
+      from any regular text.  Use a free font service like https://fonts.google.com/
+      or any other that you choose.
+
+      7. Pick a colour theme using a tool like https://colorhunt.co/ with at least
+      3 colours, and use them throughout your site for backgrounds, borders, fonts.
+      Your store page needs to look attractive and marks will be given for good a
+      good looking site.
+
+      8. You are welcome to use existing CSS libraries to help you with your layout,
+      but you must also include your own styles (i.e., you can't use a library
+      for everything in your design).
+
+      9. Make sure you don't use copyrighted materials from other sites.  If you use
+      icons, fonts, images, etc., make sure you are legally permitted to reuse them.
+      Some resources to consider:
+
+        - https://unsplash.com/ for images
+        - https://fontawesome.com/ for icons
+        - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
+      -->
+    </body>
+</html>

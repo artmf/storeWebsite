@@ -1,0 +1,207 @@
+/** Add any CSS you need to this file. */
+
+body {
+    font-family: "Playfair Display", serif;
+}
+
+.top-img {
+    width: 100vw;
+}
+
+header {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.search {
+    background-color: rgb(24, 24, 24);
+    color: White;
+    font-weight: bold;
+}
+
+#srch {
+    margin: 0.3em;
+    border-radius: 0.1em;
+    border: thin;
+}
+
+.submit-btn {
+    border-radius: 0.2em;
+    border: thin;
+}
+
+.submit-contact {
+    border-radius: 0.2em;
+    border: thin;
+    margin: 0.5em;
+}
+
+.nav {
+    background-color: black;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.nav-title,
+.nav-title:hover {
+    font-size: 1.5em;
+    padding: 0.33em;
+    display: inline-block;
+    color: rgb(228, 206, 13);
+    font-family: "Lobster", cursive;
+}
+
+.title {
+    color: rgb(228, 206, 13);
+    font-family: "Lobster", cursive;
+    font-weight: bold;
+    text-align: center;
+}
+
+header p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+}
+
+.nav-option {
+    color: white;
+    display: inline-block;
+    padding: 1em;
+}
+
+.nav-option:hover {
+    color: rgb(30, 106, 247);
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+.nav-cart {
+    padding: 1em;
+    float: right;
+}
+
+.nav-login {
+    padding: 1em;
+    margin-left: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+/*.cart-style {
+    padding: 1em;
+    text-align: center;
+    list-style-type: none;
+    background-color: lightgray;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: 1000;
+    border-radius: 0 0 0.5em 0.5em;
+}*/
+
+.side-nav {
+    width: 200px;
+    background-color: lightgray;
+    padding: 0.5em;
+}
+
+.select-type {
+    text-align: center;
+    font-weight: bold;
+}
+
+.choice {
+    display: block;
+    padding-left: 1em;
+    padding-bottom: 0.1em;
+    font-weight: bold;
+}
+
+.choice:hover {
+    color: black;
+}
+
+.main {
+    flex: 75%;
+    margin-left: auto;
+}
+
+.color,
+.color:hover {
+    color: red;
+}
+
+.wrapper {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+}
+
+.card {
+    display: inline-block;
+    margin: 1em;
+    width: 200px !important;
+}
+
+.list {
+    display: list-item;
+    list-style-type: none;
+    color: black;
+}
+.list:hover {
+    color: rgb(30, 106, 247);
+}
+
+.footer-inner-div {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.social-media {
+    padding: 1em;
+    font-size: 2em;
+}
+
+.clicked {
+    color: black;
+}
+
+.form {
+    border: solid 1px black;
+    width: 50vw;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+    border-radius: 1.5em;
+    background: lightgray;
+}
+
+.form-ele {
+    display: block;
+    padding: 0.2em;
+    margin: auto;
+}
+
+.contact-wrapper {
+    padding: 1em;
+}
+
+.error {
+    color: red;
+}
+
+.footer {
+    padding: 4em;
+    background-color: lightgray;
+    color: black;
+    display: flex;
+    text-align: left;
+}
